@@ -79,7 +79,7 @@ let savedImg = function($, news_title) {
 };
 //抓取新闻
 let fetchPage = function(x, fullpath) {
-  if (fetched > fetchLimit) {
+  if (fetched >= fetchLimit) {
     fetched = 0;
     console.log(`已完成抓取 ${fetchLimit} 条数据`);
     return process.exit();
